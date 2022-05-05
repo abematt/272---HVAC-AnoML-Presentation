@@ -57,10 +57,10 @@ const Footer = ({ t }: any) => {
                 {t(`Do you have any question? Feel free to reach out.`)}
               </Para>
               <a href="mailto:l.qqbadze@gmail.com">
-                <Chat>{t(`Let's Chat`)}</Chat>
+                {/* <Chat>{t(`Let's Chat`)}</Chat> */}
               </a>
             </Col>
-            <Col lg={8} md={8} sm={12} xs={12}>
+            {/* <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
               <Large to="/" left="true">
                 {t("Application Security")}
@@ -101,8 +101,8 @@ const Footer = ({ t }: any) => {
               <Large left="true" to="/">
                 {t("Careers & Culture")}
               </Large>
-            </Col>
-            <Col lg={6} md={6} sm={12} xs={12}>
+            </Col> */}
+            {/* <Col lg={6} md={6} sm={12} xs={12}>
               <Label htmlFor="select-lang">{t("Language")}</Label>
               <LanguageSwitchContainer>
                 <LanguageSwitch onClick={() => handleChange("en")}>
@@ -122,7 +122,7 @@ const Footer = ({ t }: any) => {
                   />
                 </LanguageSwitch>
               </LanguageSwitchContainer>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </FooterSection>
@@ -145,10 +145,10 @@ const Footer = ({ t }: any) => {
             </NavLink>
             <FooterContainer>
               <SocialLink
-                href="https://github.com/Adrinlol/create-react-app-adrinlol"
+                href="https://github.com/sjsucmpe272SP22/HVACAnomaly"
                 src="github.svg"
               />
-              <SocialLink
+              {/* <SocialLink
                 href="https://twitter.com/Adrinlolx"
                 src="twitter.svg"
               />
@@ -159,13 +159,13 @@ const Footer = ({ t }: any) => {
               <SocialLink
                 href="https://medium.com/@lashakakabadze/"
                 src="medium.svg"
-              />
-              <a href="https://www.buymeacoffee.com/adrinlol">
+              /> */}
+              {/* <a href="https://www.buymeacoffee.com/adrinlol">
                 <img
                   src="https://img.buymeacoffee.com/button-api/?text=Buy me a pizza&emoji=🍕&slug=adrinlol&button_colour=FF5F5F&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00"
                   alt="Buy me a pizza"
                 />
-              </a>
+              </a> */}
             </FooterContainer>
           </Row>
         </Container>

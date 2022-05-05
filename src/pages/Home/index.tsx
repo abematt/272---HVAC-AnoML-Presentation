@@ -4,7 +4,7 @@ import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
-import ContactContent from "../../content/ContactContent.json";
+import ImprovementContent from "../../content/ImprovementContent.json";
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -21,7 +21,7 @@ const Home = () => {
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="underconstruction.svg"
         id="intro"
       />
       <MiddleBlock
@@ -48,14 +48,21 @@ const Home = () => {
         type="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        icon="teamatwork.svg"
         id="product"
       />
-      <Contact
+        <ContentBlock
+        type="right"
+        title={ImprovementContent.title}
+        content={ImprovementContent.text}
+        icon="teamatwork.svg"
+        id="product"
+      />
+      {/* <Contact
         title={ContactContent.title}
         content={ContactContent.text}
         id="contact"
-      />
+      /> */}
     </Container>
   );
 };

@@ -1,10 +1,7 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "HVAC AnoML",
+  "text": "A system to scalibily ingest HVAC IoT data and leverage Machine Learning to detect anomalies",
   "button": [
-    {
-      "title": "Explore"
-    },
     {
       "title": "Learn more",
       "color": "#fff"
