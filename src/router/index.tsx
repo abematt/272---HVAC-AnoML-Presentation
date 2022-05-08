@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Dashboard from "../pages/Home/dashboard";
 import routes from "./config";
 import { Styles } from "../styles/styles";
 
@@ -12,6 +13,7 @@ const Router = () => {
       <Header />
       <Switch>
         {routes.map((routeItem) => {
+          console.log("routeItem")
           return (
             <Route
               key={routeItem.component}
@@ -21,6 +23,11 @@ const Router = () => {
             />
           );
         })}
+        <Route
+          key = "2"
+          exact path="/dashboard"
+          component= {Dashboard}
+        />
       </Switch>
       <Footer />
     </Suspense>
