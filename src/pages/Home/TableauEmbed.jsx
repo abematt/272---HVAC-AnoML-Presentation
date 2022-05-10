@@ -5,7 +5,7 @@ const {tableau} = window;
 function TableauEmbed(){
   const ref = useRef(null)
   // const url = "https://public.tableau.com/views/HVAC272/MainDash"
-  const url = "https://10az.online.tableau.com/t/hvac272/views/try2/MainDash?:origin=card_share_link&:embed=y"
+  const url = "https://10az.online.tableau.com/t/hvac272/views/HVAC272Update/MainDash?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link"
 
   function initViz(){
     new tableau.Viz(ref.current, url)
