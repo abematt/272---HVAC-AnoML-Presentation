@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import styled from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TableauEmbed from './TableauEmbed';
+import { useHistory } from 'react-router-dom'
 
 const Container = styled.div`
  display: flex;
@@ -20,6 +21,7 @@ const Login = () => {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const [loggedIn,setLoggedIn] = useState(false);
+    const history = useHistory();
 
 const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,7 +29,7 @@ const handleSubmit = (e) => {
     console.log("Email:",email,"Password:",password)
     if(email==="admin@gmail.com" && password==="admin")
     {
-      setLoggedIn(true)
+      history.push("/tableau")
     }
     console.log(setLoggedIn)
 }

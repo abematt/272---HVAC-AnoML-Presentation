@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Dashboard from "../pages/Home/dashboard";
 import Architecture from "../pages/Home/architecture";
 import Home from "../pages/Home";
-
+import TableauePAge from "../pages/Home/tableaupage"
 import routes from "./config";
 import { Styles } from "../styles/styles";
 
@@ -40,6 +40,11 @@ const Router = () => {
           key = "3"
           exact path="/architecture"
           component = {Architecture}
+        />
+        <Route
+          key = "4"
+          exact path="/tableau"
+          component={TableauePAge}
         />
       </Switch>
       <Footer />
