@@ -52,7 +52,7 @@ const Header = ({ t }: any) => {
           <Span>{t("Product")}</Span>
         </CustomNavLinkSmall> */}
         <CustomNavLinkSmall onClick={() => history.push("/architecture")}>
-          <Span>{t("Architeture")}</Span>
+          <Span>{t("Architecture")}</Span>
         </CustomNavLinkSmall>
         {saved==="true"?"":<CustomNavLinkSmall onClick={() => history.push("/login")}>
           <Span>{t("Login")}</Span>
