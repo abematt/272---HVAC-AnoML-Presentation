@@ -18,6 +18,9 @@ import {
 import { useHistory } from 'react-router-dom'
 
 const Header = ({ t }: any) => {
+  const saved = localStorage.getItem("loggedIn");
+  console.log("the logged in status is ",saved)
+
   const [visible, setVisibility] = useState(false);
   const history = useHistory();
 
@@ -51,9 +54,19 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={() => history.push("/architecture")}>
           <Span>{t("Architeture")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall onClick={() => history.push("/dashboard")}>
+        {saved==="true"?"":<CustomNavLinkSmall onClick={() => history.push("/login")}>
+          <Span>{t("Login")}</Span>
+        </CustomNavLinkSmall>}
+        {saved==="true"?<CustomNavLinkSmall onClick={() => history.push("/dashboard")}>
           <Span>{t("Dashboard")}</Span>
-        </CustomNavLinkSmall>
+        </CustomNavLinkSmall>:""}
+        {saved==="true"?<CustomNavLinkSmall onClick={()=>{
+          localStorage.setItem("loggedIn","false")
+          history.push("/")
+          history.go(0)
+          }}>
+          <Span>{t("Logout")}</Span>
+        </CustomNavLinkSmall>:""}
         {/* <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}

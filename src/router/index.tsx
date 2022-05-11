@@ -6,10 +6,12 @@ import Dashboard from "../pages/Home/dashboard";
 import Architecture from "../pages/Home/architecture";
 import Home from "../pages/Home";
 import TableauePAge from "../pages/Home/tableaupage"
+import Login from "../pages/Home/login"
 import routes from "./config";
 import { Styles } from "../styles/styles";
 
 const Router = () => {
+
   return (
     <Suspense fallback={null}>
       <Styles />
@@ -46,6 +48,11 @@ const Router = () => {
           exact path="/tableau"
           component={TableauePAge}
         />
+        <Route
+          key = "5"
+          exact path="/login"
+          component={Login}
+          />
       </Switch>
       <Footer />
     </Suspense>

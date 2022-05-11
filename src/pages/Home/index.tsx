@@ -5,6 +5,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ImprovementContent from "../../content/ImprovementContent.json";
+import { useHistory } from 'react-router-dom'
 
 const Contact = lazy(() => import("../../components/ContactForm"));
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
@@ -13,6 +14,11 @@ const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
 
 const Home = () => {
+  if(!localStorage.getItem("loggedIn")){
+    localStorage.setItem("loggedIn","false");
+  }
+
+  const history = useHistory();
   return (
     <Container>
       <ScrollToTop />

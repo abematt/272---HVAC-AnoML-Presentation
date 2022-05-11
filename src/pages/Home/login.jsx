@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import styled from "styled-components";
@@ -22,6 +22,7 @@ const Login = () => {
     const [password,setPassword] = useState("");
     const [loggedIn,setLoggedIn] = useState(false);
     const history = useHistory();
+    const tableauEmbed = <TableauEmbed/>
 
 const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,14 +30,19 @@ const handleSubmit = (e) => {
     console.log("Email:",email,"Password:",password)
     if(email==="admin@gmail.com" && password==="admin")
     {
+      setLoggedIn(true)
       history.push("/tableau")
+      localStorage.setItem("loggedIn", "true")
+      // navigate("/home")
+      history.go(0)
+      
     }
     console.log(setLoggedIn)
 }
 
 return (
 <Container>
-{loggedIn?<TableauEmbed/>:<Form>
+<Form>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" placeholder="Enter email" onChange={(e)=>setEmail(e.target.value)}/>
@@ -50,10 +56,10 @@ return (
     <Form.Control type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)}/>
   </Form.Group> 
   <Space/>
-  <Button variant="primary" onClick={(e)=>handleSubmit(e)}>
+  <Button variant="primary" type="submit" onClick={(e)=>handleSubmit(e)}>
     Submit
   </Button>
-</Form>}
+</Form>
 
 </Container>
     );

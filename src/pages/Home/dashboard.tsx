@@ -11,8 +11,8 @@ const Container = lazy(() => import("../../common/Container"));
 const Dashboard = () => {
     return (
         <Container>
-            <Login/>
-            {/* <TableauEmbed/> */}
+            {/* <Login/> */}
+            <TableauEmbed/> 
         </Container>
     );
 };
