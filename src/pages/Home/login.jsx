@@ -22,12 +22,14 @@ const Login = () => {
     const [loggedIn,setLoggedIn] = useState(false);
 
 const handleSubmit = (e) => {
+    e.preventDefault();
     console.log("submitted")
     console.log("Email:",email,"Password:",password)
     if(email==="admin@gmail.com" && password==="admin")
     {
       setLoggedIn(true)
     }
+    console.log(setLoggedIn)
 }
 
 return (
@@ -46,7 +48,7 @@ return (
     <Form.Control type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)}/>
   </Form.Group> 
   <Space/>
-  <Button variant="primary" onClick={handleSubmit}>
+  <Button variant="primary" onClick={(e)=>handleSubmit(e)}>
     Submit
   </Button>
 </Form>}
