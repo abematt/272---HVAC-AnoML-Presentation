@@ -31,7 +31,7 @@ const handleSubmit = (e) => {
     if(email==="admin@gmail.com" && password==="admin")
     {
       setLoggedIn(true)
-      history.push("/tableau")
+      history.push("/")
       localStorage.setItem("loggedIn", "true")
       // navigate("/home")
       history.go(0)
