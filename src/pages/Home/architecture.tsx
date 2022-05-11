@@ -1,5 +1,5 @@
 import { lazy } from "react";
-import diagram from '../../assets/anomaly_detection.gif'
+import diagram from '../../assets/arch_diag.gif'
 import styled from "styled-components";
 const Container = lazy(() => import("../../common/Container"));
 
