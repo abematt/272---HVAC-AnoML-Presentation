@@ -28,7 +28,7 @@ const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submitted")
     console.log("Email:",email,"Password:",password)
-    if(email==="admin@gmail.com" && password==="admin")
+    if(email==="hvac.owner@gmail.com" && password==="hvac")
     {
       setLoggedIn(true)
       history.push("/")

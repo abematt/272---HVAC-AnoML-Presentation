@@ -11,7 +11,7 @@ const ArchitectureGif = styled.img`
 const Architecture = () => {
     return (
         <Container>
-            <h1>Architecture Diagram</h1>
+            <h1>Architecture</h1>
             <ArchitectureGif src={diagram} alt="loading"></ArchitectureGif>
             <p></p>
         </Container>

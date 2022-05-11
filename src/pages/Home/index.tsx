@@ -5,6 +5,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ImprovementContent from "../../content/ImprovementContent.json";
+import HowWillItBeUsed from "../../content/HowWillItBeUsed.json"
 import { useHistory } from 'react-router-dom'
 
 const Contact = lazy(() => import("../../components/ContactForm"));
@@ -17,8 +18,6 @@ const Home = () => {
   if(!localStorage.getItem("loggedIn")){
     localStorage.setItem("loggedIn","false");
   }
-
-  const history = useHistory();
   return (
     <Container>
       <ScrollToTop />
@@ -57,13 +56,20 @@ const Home = () => {
         icon="teamatwork.svg"
         id="product"
       />
-        {/* <ContentBlock
+      <ContentBlock
         type="right"
+        title={HowWillItBeUsed.title}
+        content={HowWillItBeUsed.text}
+        icon="process_outline.svg"
+        id="product"
+      /> 
+        <ContentBlock
+        type="left"
         title={ImprovementContent.title}
         content={ImprovementContent.text}
-        icon="teamatwork.svg"
+        icon="developer_outline.svg"
         id="product"
-      /> */}
+      /> 
       {/* <Contact
         title={ContactContent.title}
         content={ContactContent.text}

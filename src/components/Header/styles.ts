@@ -102,3 +102,8 @@ export const Span = styled("span")`
     text-decoration: rgb(255, 130, 92) wavy underline;
   }
 `;
+
+export const UserSpan = styled("span")`
+  color: black;
+  font-size: 14px;
+`;

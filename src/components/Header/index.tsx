@@ -4,6 +4,7 @@ import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
+import UserIcon from '../../assets/Sample_User_Icon.png'
 import {
   HeaderSection,
   LogoContainer,
@@ -14,6 +15,7 @@ import {
   Label,
   Outline,
   Span,
+  UserSpan,
 } from "./styles";
 import { useHistory } from 'react-router-dom'
 
@@ -67,6 +69,9 @@ const Header = ({ t }: any) => {
           }}>
           <Span>{t("Logout")}</Span>
         </CustomNavLinkSmall>:""}
+        {saved==="true"?<UserSpan>{t("HVAC-Owner")} </UserSpan>:""}
+
+        
         {/* <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
