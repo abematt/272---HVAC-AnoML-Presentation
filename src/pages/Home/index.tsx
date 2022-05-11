@@ -51,13 +51,13 @@ const Home = () => {
         icon="teamatwork.svg"
         id="product"
       />
-        <ContentBlock
+        {/* <ContentBlock
         type="right"
         title={ImprovementContent.title}
         content={ImprovementContent.text}
         icon="teamatwork.svg"
         id="product"
-      />
+      /> */}
       {/* <Contact
         title={ContactContent.title}
         content={ContactContent.text}

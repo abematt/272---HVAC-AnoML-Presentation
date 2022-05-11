@@ -6,6 +6,8 @@ import "antd/dist/antd.css";
 import Router from "./router";
 import i18n from "./translation";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const App = () => (
   <BrowserRouter>
     <I18nextProvider i18n={i18n}>
