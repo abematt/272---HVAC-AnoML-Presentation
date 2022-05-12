@@ -7,6 +7,7 @@ import Architecture from "../pages/Home/architecture";
 import Home from "../pages/Home";
 import TableauePAge from "../pages/Home/tableaupage"
 import Login from "../pages/Home/login"
+import Model from "../pages/Home/model"
 import routes from "./config";
 import { Styles } from "../styles/styles";
 
@@ -53,6 +54,11 @@ const Router = () => {
           exact path="/login"
           component={Login}
           />
+        <Route
+          key = "6"
+          exact path="/historical-analysis"
+          component={Model}
+        />
       </Switch>
       <Footer />
     </Suspense>

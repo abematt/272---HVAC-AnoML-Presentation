@@ -62,6 +62,9 @@ const Header = ({ t }: any) => {
         {saved==="true"?<CustomNavLinkSmall onClick={() => history.push("/dashboard")}>
           <Span>{t("Dashboard")}</Span>
         </CustomNavLinkSmall>:""}
+        {saved==="true"?<CustomNavLinkSmall onClick={() => history.push("/historical-analysis")}>
+          <Span>{t("Historical Analysis")}</Span>
+        </CustomNavLinkSmall>:""}
         {saved==="true"?<CustomNavLinkSmall onClick={()=>{
           localStorage.setItem("loggedIn","false")
           history.push("/")
