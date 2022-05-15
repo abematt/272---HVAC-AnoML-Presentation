@@ -12,10 +12,10 @@ const ArchitectureGif = styled.img`
 const Architecture = () => {
     return (
         <Container>
-            <h1>Streaming Anomaly</h1>
-            <ArchitectureGif src={diagram} alt="loading"></ArchitectureGif>
             <h1>Batch Prediction</h1>
             <ArchitectureGif src={diagram_two} alt="loading"></ArchitectureGif>
+            <h1>Streaming Anomaly</h1>
+            <ArchitectureGif src={diagram} alt="loading"></ArchitectureGif>
         </Container>
 
     );
