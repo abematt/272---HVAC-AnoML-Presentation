@@ -1,7 +1,7 @@
 # CMPE 272 Enterprise Software Platform Project
 
 ## Overview
-Deployed at: https://majestic-syrniki-4d8693.netlify.app/login
+Deployed at: https://majestic-syrniki-4d8693.netlify.app/
 The project involves the creation of a website that serves as both a presentation platform and a dashboard for an HVAC (Heating, Ventilation, and Air Conditioning) anomaly detection system.
 
 ## Project Components
