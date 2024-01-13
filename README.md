@@ -2,7 +2,7 @@
 
 ## Overview
 Deployed at: https://majestic-syrniki-4d8693.netlify.app/login
-This markdown document provides a brief description of the final project for the CMPE 272 Enterprise Software Platform course. The project involves the creation of a website that serves as both a presentation platform and a dashboard for an HVAC (Heating, Ventilation, and Air Conditioning) anomaly detection system.
+The project involves the creation of a website that serves as both a presentation platform and a dashboard for an HVAC (Heating, Ventilation, and Air Conditioning) anomaly detection system.
 
 ## Project Components
 
